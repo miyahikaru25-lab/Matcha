@@ -27,9 +27,7 @@
   --ease: cubic-bezier(.22, .61, .36, 1);
 }
 
-/* =========================================================
-   Reset
-   ========================================================= */
+/* Reset */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
@@ -57,9 +55,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 
 :focus-visible { outline: 2px solid var(--gold-bright); outline-offset: 3px; }
 
-/* =========================================================
-   Layout helpers
-   ========================================================= */
+/* Layout helpers */
 .wrap { width: min(100% - var(--gutter) * 2, var(--wrap)); margin-inline: auto; }
 .wrap--narrow { max-width: 680px; }
 
@@ -90,9 +86,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .section-head--center { text-align: center; }
 .section-head--center .eyebrow { padding-left: 0; }
 
-/* =========================================================
-   Buttons
-   ========================================================= */
+/* uttons */
 .btn {
   display: inline-block;
   font-family: var(--f-display);
