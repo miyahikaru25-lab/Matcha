@@ -109,9 +109,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 .btn--solid:hover { background: var(--gold); border-color: var(--gold); }
 
-/* =========================================================
-   Header
-   ========================================================= */
+/* Header */
 .site-header {
   position: fixed; inset: 0 0 auto 0; z-index: 100;
   transition: background .4s var(--ease), box-shadow .4s var(--ease);
@@ -162,9 +160,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   z-index: 90; opacity: 0; transition: opacity .3s;
 }
 
-/* =========================================================
-   Hero
-   ========================================================= */
+/* Hero */
 .hero { position: relative; min-height: 100svh; display: flex; align-items: center; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; }
 .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
@@ -221,9 +217,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   0% { transform: translateY(-100%); } 60%,100% { transform: translateY(100%); }
 }
 
-/* =========================================================
-   About
-   ========================================================= */
+/* About */
 .about-grid {
   display: grid; grid-template-columns: 1.05fr .95fr;
   gap: clamp(32px, 5vw, 72px); align-items: center;
@@ -244,9 +238,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .about-body p { color: var(--sumi-soft); margin-bottom: 1em; }
 .about-body p:last-child { margin-bottom: 0; }
 
-/* =========================================================
-   Commitment
-   ========================================================= */
+/* Commitment */
 .commit-list { display: grid; gap: clamp(28px, 4vw, 44px); max-width: 880px; margin-inline: auto; counter-reset: c; }
 .commit-item {
   display: grid; grid-template-columns: auto 1fr; column-gap: clamp(20px, 4vw, 44px); row-gap: 8px;
@@ -268,9 +260,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 .commit-text { grid-column: 2; color: var(--cream-dim); }
 
-/* =========================================================
-   Menu
-   ========================================================= */
+/* Menu */
 .menu-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: clamp(24px, 3vw, 36px);
@@ -294,9 +284,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .menu-price { font-family: var(--f-latin); font-weight: 600; font-size: clamp(1.3rem, 3vw, 1.6rem); color: var(--gold); }
 .menu-desc { font-size: .95rem; color: var(--sumi-soft); line-height: 1.8; }
 
-/* =========================================================
-   Shop
-   ========================================================= */
+/* Shop */
 .shop-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(32px, 5vw, 64px); align-items: stretch; }
 .shop-name {
   font-family: var(--f-display); font-weight: 700;
@@ -313,9 +301,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .shop-map { border-radius: var(--radius); overflow: hidden; min-height: 360px; border: 1px solid rgba(205,168,99,.3); }
 .shop-map iframe { width: 100%; height: 100%; min-height: 360px; border: 0; }
 
-/* =========================================================
-   Contact form
-   ========================================================= */
+/* Contact form */
 .form { display: flex; flex-direction: column; gap: 22px; }
 .field { display: flex; flex-direction: column; gap: 8px; }
 .field label { font-family: var(--f-display); font-weight: 600; letter-spacing: .08em; font-size: 1.02rem; }
@@ -333,9 +319,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .form-note { font-size: .95rem; color: var(--matcha-soft); min-height: 1.2em; }
 .form-note.error { color: #b1452f; }
 
-/* =========================================================
-   Footer
-   ========================================================= */
+/* Footer */
 .site-footer { background: var(--matcha-deep); color: var(--cream); padding-block: clamp(48px, 7vw, 80px) 28px; }
 .footer-inner { display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: center; }
 .footer-brand { display: flex; flex-direction: column; gap: 12px; }
@@ -350,15 +334,11 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   font-family: var(--f-latin); letter-spacing: .12em; font-size: .85rem; color: var(--cream-dim);
 }
 
-/* =========================================================
-   Reveal animation
-   ========================================================= */
+/* Reveal animation */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
 .reveal.in { opacity: 1; transform: none; }
 
-/* =========================================================
-   Responsive
-   ========================================================= */
+/* Responsive */
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; }
   .about-media::after { inset: 10px -10px -10px 10px; }
