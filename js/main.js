@@ -1,12 +1,12 @@
 'use strict';
 
-/* ---- Header background on scroll ---- */
+// Header background on scroll
 const header = document.getElementById('siteHeader');
 const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
 onScroll();
 window.addEventListener('scroll', onScroll, { passive: true });
 
-/* ---- Mobile navigation drawer ---- */
+// Mobile navigation drawer
 const toggle  = document.getElementById('navToggle');
 const nav     = document.getElementById('primaryNav');
 const overlay = document.getElementById('navOverlay');
@@ -37,7 +37,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && nav.classList.contains('open')) closeNav();
 });
 
-/* ---- Scroll reveal ---- */
+// Scroll reveal
 const reveals = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window) {
   const io = new IntersectionObserver((entries, obs) => {
@@ -56,7 +56,7 @@ if ('IntersectionObserver' in window) {
   reveals.forEach(el => el.classList.add('in'));
 }
 
-/* ---- Contact form (demo, no backend) ---- */
+// Contact form
 const form = document.getElementById('contactForm');
 const note = document.getElementById('formNote');
 form.addEventListener('submit', e => {
